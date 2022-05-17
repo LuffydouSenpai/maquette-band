@@ -12,21 +12,78 @@
 
 /* class unique */
 
-.hiden{
+.hiden {
     display: none;
 }
 
+.gras {
+    font-weight: bold;
+}
+
+.gris {
+    color: gray;
+}
+
+.souligner{
+    text-decoration: underline black;
+}
+
+.soldOut {
+    background-color: red;
+    color: white;
+    padding: 0.1rem 0.3rem;
+    margin: 0 1rem;
+}
+
+.nombreRestant {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 0.1rem 0.5rem;
+}
+
+.buyTickets {
+    background-color: black;
+    color: white;
+    padding: 0.6rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* balise unique */
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    padding: 4rem 0 1rem 0;
+}
+
+h3 {
+    color: gray;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
 
 /* header */
 
-
-header nav a { 
+header nav a {
     display: none;
     text-decoration: none;
     color: white;
+    padding: 0.7rem;
 }
 
-
+header nav a:hover,
+#iconeBurger:hover,
+header nav a:visited {
+    background-color: gray;
+}
 
 header nav a:first-child {
     display: block;
@@ -39,19 +96,17 @@ header nav a:first-child {
     align-items: center;
     justify-content: space-between;
     color: white;
-
-}
-
-#iconeBurger {
-    padding: 15px;
 }
 
 li {
     list-style-type: none;
-    padding: 15px;
 }
 
-#headerImg{
+#iconeBurger {
+    padding: 0.7rem;
+}
+
+#headerImg {
     width: 100%;
     height: 23vh;
     background-image: url("../img/la.jpg");
@@ -63,5 +118,177 @@ li {
     align-items: flex-end;
     text-align: center;
     color: white;
-    padding: 15px;
+
+}
+
+
+/* section THE BAND */
+
+/* texte */
+
+#theBandSide {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#theBand p {
+    text-align: justify;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+
+/* figure */
+
+#figureTheBandSide {
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+#theBand figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#theBand figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#theBand img {
+    border-radius: 2%;
+}
+
+/* section TOUR DATE */
+
+#tourDates {
+    background-color: black;
+}
+
+#tourDates {
+    color: white;
+}
+
+#mois {
+    background-color: white;
+    color: gray;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#mois p {
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+#mois div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* figure */
+
+#figureTourDatesSide {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+#tourDates figure {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+#tourDates figcaption p {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+#tourDates img {
+    margin-bottom: 0.5rem;
+}
+
+/* section Contact */
+
+#contact {
+    background-color: white;
+    padding-bottom: 5rem;
+}
+
+#contactSide {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#information {
+    padding-top: 2rem;
+}
+
+#lieu,
+#numero,
+#email {
+    display: flex;
+    flex-direction: row;
+}
+
+#information i {
+    padding-right: 1rem;
+    padding-bottom: 0.7rem;
+}
+
+#contact input {
+    width: 100%;
+    padding: 0.7rem;
+}
+
+#contact form div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact form div:last-child input {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+}
+
+#map {
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+/* footer */
+
+footer{
+    padding-bottom: 3rem;
+}
+
+#socio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#socio i{
+    padding: 0 0.1rem;
+    color: gray;
+    font-size: 1.7rem;
+}
+
+footer p{
+   text-align: center;
+   padding: 1.5rem; 
 }

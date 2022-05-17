@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -32,21 +34,142 @@
             </ul>
             <form class="hiden" action="" method="post">
                 <input type="text" name="search">
-                <button type="submit">text</button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <div id="iconeBurger"><i class="fa-solid fa-bars"></i></div>
         </nav>
         <div id="headerImg">
-         <div class="hiden">
-            <p>Los Angeles</p>
-            <p>We had the best time playing at Venice Beach!</p>
-        </div>   
+            <div class="hiden">
+                <p>Los Angeles</p>
+                <p>We had the best time playing at Venice Beach!</p>
+            </div>
         </div>
-        
-        
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section id="theBand">
+            <div id="theBandSide">
+                <h1>THE BAND</h1>
+                <h3>We love music</h3>
+                <p>We have created a fictional band website. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Nam,
+                    odio eaque? Aliquid commodi eligendi dolore nisi. Minus rem, vero aliquam quam maiores neque rerum
+                    quod,
+                    quo sapiente quisquam harum veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Adipisci ratione molestiae cum earum accusamus iusto quod perferendis aliquam doloribus quasi nam
+                    libero saepe, natus sequi, iste ad cupiditate minus nihil!</p>
+                <div id="figureTheBandSide">
+                    <figure>
+                        <figcaption>Name</figcaption>
+                        <img src="./assets/img/bandmember.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>Name</figcaption>
+                        <img src="./assets/img/bandmember.jpg" alt="">
+                    </figure>
+                    <figure>
+                        <figcaption>Name</figcaption>
+                        <img src="./assets/img/bandmember.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="tourDates">
+            <div id="tourDatesSide">
+                <h2>TOUR DATES</h2>
+                <h3>Remember to book your tickets!</h3>
+                <div id="mois">
+                    <div>
+                        <p>September <span class="soldOut">Sold out</span></p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>October <span class="soldOut">Sold out</span></p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>November</p>
+                        <p><span class="nombreRestant">3</span></p>
+                    </div>
+                </div>
+                <div id="figureTourDatesSide">
+                    <figure>
+                        <img src="./assets/img/newyork.jpg" alt="">
+                        <figcaption>
+                            <p class="gras">New York</p>
+                            <p class="gris">Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buyTickets">Buy Tickets</button>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/paris.jpg" alt="">
+                        <figcaption>
+                            <p class="gras">Paris</p>
+                            <p class="gris">Sat 28 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buyTickets">Buy Tickets</button>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/sanfran.jpg" alt="">
+                        <figcaption>
+                            <p class="gras">New York</p>
+                            <p class="gris">Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buyTickets">Buy Tickets</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div id="contactSide">
+                <h2>CONTACT</h2>
+                <h3>Fan? Drop a note!</h3>
+                <div id="information">
+                    <div id="lieu">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Chicago, US</p>
+                    </div>
+                    <div id="numero">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Phone: +00 151515</p>
+                    </div>
+                    <div id="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Mail: mail@mail.com</p>
+                    </div>
+                </div>
+
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Message" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <img id="map" src="./assets/img/map.jpg" alt="">
+    </main>
+    <footer>
+        <div id="socio">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat-square"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p class="gris">Powered by <span class="souligner">w3.css</span> </p>
+    </footer>
 </body>
 
 </html>
