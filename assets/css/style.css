@@ -24,7 +24,7 @@
     color: gray;
 }
 
-.souligner{
+.souligner {
     text-decoration: underline black;
 }
 
@@ -40,6 +40,7 @@
     color: white;
     border-radius: 50%;
     padding: 0.1rem 0.5rem;
+    margin-right: 1.5rem;
 }
 
 .buyTickets {
@@ -72,11 +73,11 @@ h3 {
 
 /* header */
 
-header nav a {
+header a {
     display: none;
     text-decoration: none;
     color: white;
-    padding: 0.7rem;
+    padding: 1rem 1.6rem;
 }
 
 header nav a:hover,
@@ -87,6 +88,15 @@ header nav a:visited {
 
 header nav a:first-child {
     display: block;
+}
+
+#headerNav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#headerNav i {
+    padding: 0 0.6rem;
 }
 
 #headerNav {
@@ -118,9 +128,18 @@ li {
     align-items: flex-end;
     text-align: center;
     color: white;
-
 }
 
+#headerImg div p:first-child {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+#headerImg div p:last-child {
+    font-size: 0.8rem;
+    padding-bottom: 3rem;
+    font-weight: bold;
+}
 
 /* section THE BAND */
 
@@ -142,6 +161,8 @@ li {
 
 #figureTheBandSide {
     width: 65%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     padding-bottom: 5rem;
 }
@@ -166,6 +187,11 @@ li {
 
 /* section TOUR DATE */
 
+#tourDatesSide {
+    width: 90%;
+    margin: 0 auto;
+}
+
 #tourDates {
     background-color: black;
 }
@@ -177,8 +203,6 @@ li {
 #mois {
     background-color: white;
     color: gray;
-    width: 90%;
-    margin: 0 auto;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -197,8 +221,6 @@ li {
 /* figure */
 
 #figureTourDatesSide {
-    width: 90%;
-    margin: 0 auto;
     padding-bottom: 2rem;
 }
 
@@ -216,6 +238,7 @@ li {
 
 #tourDates img {
     margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 /* section Contact */
@@ -246,9 +269,17 @@ li {
     padding-bottom: 0.7rem;
 }
 
+#information form div:first-child {
+    margin-bottom: 0.5rem;
+}
+
 #contact input {
     width: 100%;
     padding: 0.7rem;
+}
+
+#contact form div {
+    width: 100%;
 }
 
 #contact form div:last-child {
@@ -271,24 +302,134 @@ li {
 
 /* footer */
 
-footer{
+footer {
     padding-bottom: 3rem;
 }
 
-#socio{
+#socio {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+
 }
 
-#socio i{
+#socio i {
     padding: 0 0.1rem;
     color: gray;
     font-size: 1.7rem;
 }
 
-footer p{
-   text-align: center;
-   padding: 1.5rem; 
+footer p {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media screen and (min-width:576px) {
+
+    /* header */
+
+    #headerNav a,
+    #headerNav form,
+    #headerImg div {
+        display: inline;
+    }
+
+    header form {
+        padding: 0 1rem;
+    }
+
+    header input {
+        background-color: black;
+        border: none;
+        padding: 0.3rem;
+    }
+
+    header button {
+        background-color: black;
+        border: none;
+        color: white;
+    }
+
+    #iconeBurger {
+        display: none;
+    }
+
+    #headerImg {
+        height: 80vh;
+    }
+
+    /* about */
+
+    #theBandSide {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #figureTheBandSide {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    #figureTheBandSide figure {
+        width: 23%;
+    }
+
+    #figureTheBandSide figcaption {
+        font-size: 1.2rem;
+    }
+
+    /* tour date */
+
+    #tourDatesSide {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #figureTourDatesSide {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #figureTourDatesSide figure {
+        width: 32%;
+    }
+
+    /* contact */
+
+    #contactSide {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #information {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #information div {
+        width: 50%;
+    }
+
+    #information form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #information form div:nth-child(1),
+    #information form div:nth-child(2) {
+        width: 48%;
+    }
+
+    #information form div:nth-child(3){
+        width: 100%;
+    }
+
+    #information form div:nth-child(4) {
+        display: flex;
+    }
 }
