@@ -90,7 +90,7 @@ header nav a:first-child {
     display: block;
 }
 
-#headerNav ul {
+#firstNav {
     display: flex;
     flex-direction: row;
 }
@@ -110,6 +110,35 @@ header nav a:first-child {
 
 li {
     list-style-type: none;
+}
+
+#moreBtn {
+    position: relative;
+    display: flex;
+    top: 1rem;
+    padding-left: 0.8rem;
+}
+
+#moreBtn i{
+    font-size: 1.3rem;
+}
+
+.hide{
+    height: 0;
+}
+
+#subMenu {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    top: 2.2rem;
+    transition: all .3s;
+}
+
+#subMenu li {
+    color: black;
 }
 
 #iconeBurger {
@@ -414,7 +443,7 @@ footer p {
         width: 50%;
     }
 
-    #information form{
+    #information form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -425,7 +454,7 @@ footer p {
         width: 48%;
     }
 
-    #information form div:nth-child(3){
+    #information form div:nth-child(3) {
         width: 100%;
     }
 
